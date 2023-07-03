@@ -1,0 +1,134 @@
+*{
+    margin: auto;
+}
+
+.WeatherContainer{
+    width:100%;
+    height: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+     background:linear-gradient(#333f63 ,#896face1);
+     text-align: center;
+}
+
+.Heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-style: italic;
+    color:#cdb4ece1;
+}
+.Weather{
+    width:80%;
+    height: 90%;
+    min-height: 80vh;
+    background-color: rgba(249, 255, 255, 0.139);
+    margin: 5% auto;
+    border-radius: 20px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+}
+
+.SearchContainer{
+    width:30%;
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.SearchBar{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-radius:6px;
+    border: 2px solid #896face1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: larger;
+    color: #896face1;
+}
+
+.btn{
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5;
+    padding:10px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.Description{
+    display: flex;
+    justify-content: space-between;
+    align-self:center;
+    flex-direction: column;
+}
+
+.WeatherDetails{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Mountain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; 
+    border-radius: 20px;
+    background-color: #d2f4f214; 
+    clip-path: polygon(0% 100%, 0% 80%, 10% 90%, 20% 80%, 30% 90%, 40% 75%, 50% 85%, 60% 70%, 70% 85%, 80% 80%, 90% 90%, 100% 80%, 100% 100%);
+}
+
+
+
+@media screen and (max-width:600px){
+    .SearchContainer{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .Heading{
+        font-size: xx-large;
+     }
+
+    .SearchBar{
+        width: 75%;
+        height: 30px;
+    }
+    .btn{
+        padding: 0px;
+    }
+    .Description{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        font-size: x-large;
+    }
+    .WeatherDetails{
+        width: 100%;
+        height: 100%;
+        min-height: 40vh;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
